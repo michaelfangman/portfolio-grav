@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => '/Applications/MAMP/htdocs/portfolio-grav/user/plugins/admin/languages/et.yaml',
-    'modified' => 1521408332,
+    'modified' => 1521512114,
     'data' => [
         'PLUGIN_ADMIN' => [
             'ADMIN_BETA_MSG' => 'Tegemist on beeta-versiooniga! Kasutamine töötaval veebilehel oma vastutusel...',

@@ -57,7 +57,7 @@ class FormPlugin extends Plugin
         require_once __DIR__ . '/vendor/autoload.php';
 
         // Backwards compatibility for plugins that use forms.
-        // class_alias('Grav\Plugin\Form\Form', 'Grav\Plugin\Form');
+        class_alias('Grav\Plugin\Form\Form', 'Grav\Plugin\Form');
 
         if ($this->isAdmin()) {
             $this->enable([

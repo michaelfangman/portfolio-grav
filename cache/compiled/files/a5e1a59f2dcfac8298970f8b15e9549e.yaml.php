@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => '/Applications/MAMP/htdocs/portfolio-grav/user/plugins/admin/languages/fa.yaml',
-    'modified' => 1521408332,
+    'modified' => 1521512114,
     'data' => [
         'PLUGIN_ADMIN' => [
             'ADMIN_BETA_MSG' => 'این یک نسخه تکمیل نشده است! استفاده از آن در محصولتان شمارا با خطر مواجه میکند...',

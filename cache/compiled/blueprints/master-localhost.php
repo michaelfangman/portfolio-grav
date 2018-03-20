@@ -1,8 +1,8 @@
 <?php
 return [
     '@class' => 'Grav\\Common\\Config\\CompiledBlueprints',
-    'timestamp' => 1521511680,
-    'checksum' => '36b1b8e7425356ad3ae682c45b60aec3',
+    'timestamp' => 1521512159,
+    'checksum' => 'ccd54cb36b91dc2fa5a682d2be00f77a',
     'files' => [
         'system/blueprints/config' => [
             'media' => [
@@ -27,13 +27,13 @@ return [
                 'file' => 'user/plugins/ganalytics/blueprints.yaml',
                 'modified' => 1483678668
             ],
-            'plugins/Form' => [
-                'file' => 'user/plugins/Form/blueprints.yaml',
-                'modified' => 1521408312
+            'plugins/form' => [
+                'file' => 'user/plugins/form/blueprints.yaml',
+                'modified' => 1521512124
             ],
             'plugins/admin' => [
                 'file' => 'user/plugins/admin/blueprints.yaml',
-                'modified' => 1521408332
+                'modified' => 1521512114
             ],
             'plugins/problems' => [
                 'file' => 'user/plugins/problems/blueprints.yaml',
@@ -1977,14 +1977,14 @@ return [
                 'name' => 'plugins.ganalytics.tabs',
                 'validation' => 'strict'
             ],
-            'plugins.Form' => [
+            'plugins.form' => [
                 'type' => '_root',
                 'form_field' => false,
                 'form' => [
                     'validation' => 'strict'
                 ]
             ],
-            'plugins.Form.enabled' => [
+            'plugins.form.enabled' => [
                 'type' => 'hidden',
                 'label' => 'PLUGIN_ADMIN.PLUGIN_STATUS',
                 'highlight' => 1,
@@ -1996,10 +1996,10 @@ return [
                 'validate' => [
                     'type' => 'bool'
                 ],
-                'name' => 'plugins.Form.enabled',
+                'name' => 'plugins.form.enabled',
                 'validation' => 'strict'
             ],
-            'plugins.Form.built_in_css' => [
+            'plugins.form.built_in_css' => [
                 'type' => 'toggle',
                 'label' => 'PLUGIN_FORM.USE_BUILT_IN_CSS',
                 'highlight' => 1,
@@ -2011,10 +2011,10 @@ return [
                 'validate' => [
                     'type' => 'bool'
                 ],
-                'name' => 'plugins.Form.built_in_css',
+                'name' => 'plugins.form.built_in_css',
                 'validation' => 'strict'
             ],
-            'plugins.Form.refresh_prevention' => [
+            'plugins.form.refresh_prevention' => [
                 'type' => 'toggle',
                 'label' => 'PLUGIN_FORM.REFRESH_PREVENTION',
                 'highlight' => 1,
@@ -2026,10 +2026,10 @@ return [
                 'validate' => [
                     'type' => 'bool'
                 ],
-                'name' => 'plugins.Form.refresh_prevention',
+                'name' => 'plugins.form.refresh_prevention',
                 'validation' => 'strict'
             ],
-            'plugins.Form.client_side_validation' => [
+            'plugins.form.client_side_validation' => [
                 'type' => 'toggle',
                 'label' => 'PLUGIN_FORM.CLIENT_SIDE_VALIDATION',
                 'highlight' => 1,
@@ -2041,10 +2041,10 @@ return [
                 'validate' => [
                     'type' => 'bool'
                 ],
-                'name' => 'plugins.Form.client_side_validation',
+                'name' => 'plugins.form.client_side_validation',
                 'validation' => 'strict'
             ],
-            'plugins.Form.inline_errors' => [
+            'plugins.form.inline_errors' => [
                 'type' => 'toggle',
                 'label' => 'PLUGIN_FORM.INLINE_ERRORS',
                 'highlight' => 0,
@@ -2056,20 +2056,20 @@ return [
                 'validate' => [
                     'type' => 'bool'
                 ],
-                'name' => 'plugins.Form.inline_errors',
+                'name' => 'plugins.form.inline_errors',
                 'validation' => 'strict'
             ],
-            'plugins.Form.general' => [
+            'plugins.form.general' => [
                 'type' => 'section',
-                'name' => 'plugins.Form.general',
+                'name' => 'plugins.form.general',
                 'validation' => 'strict'
             ],
-            'plugins.Form.files' => [
+            'plugins.form.files' => [
                 'type' => 'section',
-                'name' => 'plugins.Form.files',
+                'name' => 'plugins.form.files',
                 'validation' => 'strict'
             ],
-            'plugins.Form.files.multiple' => [
+            'plugins.form.files.multiple' => [
                 'type' => 'toggle',
                 'label' => 'PLUGIN_FORM.ALLOW_MULTIPLE',
                 'highlight' => 1,
@@ -2081,10 +2081,10 @@ return [
                 'validate' => [
                     'type' => 'bool'
                 ],
-                'name' => 'plugins.Form.files.multiple',
+                'name' => 'plugins.form.files.multiple',
                 'validation' => 'strict'
             ],
-            'plugins.Form.files.limit' => [
+            'plugins.form.files.limit' => [
                 'type' => 'text',
                 'size' => 'x-small',
                 'label' => 'PLUGIN_FORM.LIMIT',
@@ -2093,18 +2093,18 @@ return [
                     'type' => 'number',
                     'min' => 1
                 ],
-                'name' => 'plugins.Form.files.limit',
+                'name' => 'plugins.form.files.limit',
                 'validation' => 'strict'
             ],
-            'plugins.Form.files.destination' => [
+            'plugins.form.files.destination' => [
                 'type' => 'text',
                 'size' => 'large',
                 'label' => 'PLUGIN_FORM.DESTINATION',
                 'default' => '@self',
-                'name' => 'plugins.Form.files.destination',
+                'name' => 'plugins.form.files.destination',
                 'validation' => 'strict'
             ],
-            'plugins.Form.files.accept' => [
+            'plugins.form.files.accept' => [
                 'type' => 'selectize',
                 'size' => 'large',
                 'label' => 'PLUGIN_FORM.ACCEPT',
@@ -2115,10 +2115,10 @@ return [
                 'validate' => [
                     'type' => 'commalist'
                 ],
-                'name' => 'plugins.Form.files.accept',
+                'name' => 'plugins.form.files.accept',
                 'validation' => 'strict'
             ],
-            'plugins.Form.files.filesize' => [
+            'plugins.form.files.filesize' => [
                 'type' => 'text',
                 'label' => 'PLUGIN_FORM.FILESIZE',
                 'size' => 'x-small',
@@ -2127,10 +2127,10 @@ return [
                     'type' => 'number',
                     'min' => 0
                 ],
-                'name' => 'plugins.Form.files.filesize',
+                'name' => 'plugins.form.files.filesize',
                 'validation' => 'strict'
             ],
-            'plugins.Form.files.avoid_overwriting' => [
+            'plugins.form.files.avoid_overwriting' => [
                 'type' => 'toggle',
                 'label' => 'PLUGIN_FORM.AVOID_OVERWRITING',
                 'highlight' => 0,
@@ -2142,10 +2142,10 @@ return [
                 'validate' => [
                     'type' => 'bool'
                 ],
-                'name' => 'plugins.Form.files.avoid_overwriting',
+                'name' => 'plugins.form.files.avoid_overwriting',
                 'validation' => 'strict'
             ],
-            'plugins.Form.files.random_name' => [
+            'plugins.form.files.random_name' => [
                 'type' => 'toggle',
                 'label' => 'PLUGIN_FORM.RANDOM_NAME',
                 'highlight' => 0,
@@ -2157,26 +2157,26 @@ return [
                 'validate' => [
                     'type' => 'bool'
                 ],
-                'name' => 'plugins.Form.files.random_name',
+                'name' => 'plugins.form.files.random_name',
                 'validation' => 'strict'
             ],
-            'plugins.Form.recaptcha' => [
+            'plugins.form.recaptcha' => [
                 'type' => 'section',
-                'name' => 'plugins.Form.recaptcha',
+                'name' => 'plugins.form.recaptcha',
                 'validation' => 'strict'
             ],
-            'plugins.Form.recaptcha.site_key' => [
+            'plugins.form.recaptcha.site_key' => [
                 'type' => 'text',
                 'label' => 'PLUGIN_FORM.RECAPTCHA_SITE_KEY',
                 'default' => '',
-                'name' => 'plugins.Form.recaptcha.site_key',
+                'name' => 'plugins.form.recaptcha.site_key',
                 'validation' => 'strict'
             ],
-            'plugins.Form.recaptcha.secret_key' => [
+            'plugins.form.recaptcha.secret_key' => [
                 'type' => 'text',
                 'label' => 'PLUGIN_FORM.RECAPTCHA_SECRET_KEY',
                 'default' => '',
-                'name' => 'plugins.Form.recaptcha.secret_key',
+                'name' => 'plugins.form.recaptcha.secret_key',
                 'validation' => 'strict'
             ],
             'plugins.admin' => [
@@ -3661,25 +3661,25 @@ return [
                     'debugStatus' => 'plugins.ganalytics.debugStatus',
                     'debugTrace' => 'plugins.ganalytics.debugTrace'
                 ],
-                'Form' => [
-                    'enabled' => 'plugins.Form.enabled',
-                    'general' => 'plugins.Form.general',
-                    'built_in_css' => 'plugins.Form.built_in_css',
-                    'refresh_prevention' => 'plugins.Form.refresh_prevention',
-                    'client_side_validation' => 'plugins.Form.client_side_validation',
-                    'inline_errors' => 'plugins.Form.inline_errors',
+                'form' => [
+                    'enabled' => 'plugins.form.enabled',
+                    'general' => 'plugins.form.general',
+                    'built_in_css' => 'plugins.form.built_in_css',
+                    'refresh_prevention' => 'plugins.form.refresh_prevention',
+                    'client_side_validation' => 'plugins.form.client_side_validation',
+                    'inline_errors' => 'plugins.form.inline_errors',
                     'files' => [
-                        'multiple' => 'plugins.Form.files.multiple',
-                        'limit' => 'plugins.Form.files.limit',
-                        'destination' => 'plugins.Form.files.destination',
-                        'accept' => 'plugins.Form.files.accept',
-                        'filesize' => 'plugins.Form.files.filesize',
-                        'avoid_overwriting' => 'plugins.Form.files.avoid_overwriting',
-                        'random_name' => 'plugins.Form.files.random_name'
+                        'multiple' => 'plugins.form.files.multiple',
+                        'limit' => 'plugins.form.files.limit',
+                        'destination' => 'plugins.form.files.destination',
+                        'accept' => 'plugins.form.files.accept',
+                        'filesize' => 'plugins.form.files.filesize',
+                        'avoid_overwriting' => 'plugins.form.files.avoid_overwriting',
+                        'random_name' => 'plugins.form.files.random_name'
                     ],
                     'recaptcha' => [
-                        'site_key' => 'plugins.Form.recaptcha.site_key',
-                        'secret_key' => 'plugins.Form.recaptcha.secret_key'
+                        'site_key' => 'plugins.form.recaptcha.site_key',
+                        'secret_key' => 'plugins.form.recaptcha.secret_key'
                     ]
                 ],
                 'admin' => [
