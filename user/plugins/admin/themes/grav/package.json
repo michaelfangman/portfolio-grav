@@ -32,7 +32,7 @@
     "rangetouch": "^1.0.5",
     "remodal": "^1.1.1",
     "selectize": "^0.12.4",
-    "sortablejs": "^1.6.1",
+    "sortablejs": "^1.15.3",
     "speakingurl": "^14.0.1",
     "toastr": "^2.1.2",
     "watchjs": "0.0.0",
